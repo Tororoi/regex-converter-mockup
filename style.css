@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+}
+
+.full-page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: bisque;
+    width: 70%;
+}
+
+.sidebar {
+    background-color: burlywood;
+    width: 30%;
+}
