@@ -8,10 +8,38 @@ body {
     height: 100vh;
 }
 
-.form-container {
+main {
     background-color: bisque;
     width: 70%;
 }
+
+h3 {
+    position: relative;
+    margin: 0;
+    /* color: rgb(151, 8, 8); */
+    left: 2.5%;
+}
+
+p {
+    position: relative;
+    margin: 2.5%;
+    /* left: 2.5%; */
+}
+
+/* Form */
+
+.form-container {
+    width: 100%;
+    margin: 2.5%;
+}
+
+textarea {
+    width: 95%;
+    resize: none;
+    font-size: 3vh;
+}
+
+/* Reference */
 
 .sidebar {
     background-color: burlywood;
