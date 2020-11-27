@@ -4,10 +4,22 @@ let before = document.getElementById("before");
 let formula = document.getElementById("regex");
 let after = document.getElementById("after");
 
-container.addEventListener("input", readout);
+// let regex = /./g
+// formula.value = regex;
 
-function readout(e) {
-    container.childNodes.forEach(t => {
-        t.value = e.target.value;
-    })
+before.addEventListener("input", forwardConvert);
+formula.addEventListener("input", updateRegex);
+after.addEventListener("input", backwardConvert);
+
+function forwardConvert(e) {
+    after.value = before.value.match(regex);
+}
+
+function updateRegex(e) {
+    regex = RegExp(e.target.value);
+    after.value = before.value.match(regex);
+}
+
+function backwardConvert(e) {
+    
 }
